@@ -1,0 +1,42 @@
+body{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    gap: 50px;
+    color: aliceblue;
+}
+#PLAY{
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: aliceblue;
+    cursor: crosshair;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 1.5s;
+    
+}
+#PLAY:hover{
+    letter-spacing: 0.25rem;
+    background-color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+}
+#PLAY:before{
+    position: absolute;
+    content: '';
+    inset:2px;
+    background-color:rgb(8, 8, 8); ;
+}
+#PLAY span{
+    position: relative;
+    z-index:1 ;
+}
+.games{
+    display: none;
+}
