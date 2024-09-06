@@ -1,0 +1,103 @@
+/* stylish button and background*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dancing Script;
+  }
+  
+  body {
+    display: flex;
+    min-height: 120vmin;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A3737;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url('./bac.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  
+  
+  a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.2s;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5%;
+    color: #ffffff;
+  }
+  
+  a:hover {
+    inset: 0px;
+    letter-spacing: 0.3rem;
+  
+  }
+  
+  a:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+  
+  
+  
+  }
+  
+  a span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  a i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #ffffff;
+    transform: translatex(-50%) skewx(325deg);
+    transition: 0.9s;
+  }
+  
+  a:hover i:before {
+    width: 20px;
+    left: 20%;
+    background: rgb(255, 0, 0);
+  }
+  
+  a i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 80%;
+    width: 10px;
+    height: 4px;
+    background: #ffffff;
+    transform: translatex(-50%) skewx(325deg);
+    transition: 0.5s;
+  }
+  
+  a:hover i:after {
+    width: 20px;
+    right: 20%;
+    background: rgb(47, 0, 255);
+  
+  }
