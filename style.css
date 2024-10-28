@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+background-image: radial-gradient( rgb(255, 94, 60),20%,rgb(255, 170, 0));
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+#div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-top: 16rem;
+}
+h1{
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font: weight 600px;;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    animation-name: logo;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+h3{
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font: weight 600px;;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    animation-name: logo;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes logo {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.fade-out{
+    opacity: 0;
+}
+p{
+    color: aliceblue;
+    margin-top: 5rem;
+    animation-name: logo;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}

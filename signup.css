@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(rgb(1, 1, 79),rgb(0, 4, 51)) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.wrapper{
+    color: aliceblue;
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(247, 239, 239, 0.968);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 35px 40px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .inputbox{
+    position: relative;
+    width:100%;
+    height: 50px;
+    margin: 30px 0px;
+    background: transparent;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+}
+.inputbox input::placeholder{
+    color: aliceblue;
+}
+.inputbox i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper.inputbox input:hover {
+    background: transparent;
+}
